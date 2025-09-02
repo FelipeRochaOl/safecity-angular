@@ -1,0 +1,34 @@
+{
+  "name": "safecity-angular-dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve": "ng serve --host 0.0.0.0 --port 4200"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@angular-devkit/build-angular": "^20.2.1",
+    "@angular/animations": "^20.2.3",
+    "@angular/cli": "^20.2.1",
+    "@angular/common": "^20.2.3",
+    "@angular/compiler": "^20.2.3",
+    "@angular/core": "^20.2.3",
+    "@angular/forms": "^20.2.3",
+    "@angular/platform-browser": "^20.2.3",
+    "@angular/platform-browser-dynamic": "^20.2.3",
+    "@angular/router": "^20.2.3",
+    "chart.js": "^4.5.0",
+    "ng2-charts": "^8.0.0",
+    "rxjs": "^7.8.2",
+    "typescript": "^5.9.2",
+    "zone.js": "^0.15.1"
+  }
+}
