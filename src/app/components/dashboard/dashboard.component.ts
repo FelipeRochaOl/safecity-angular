@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
+import { Router, RouterLink } from "@angular/router";
 import { DashboardStats, Incident } from "../../models/incident.model";
 import { LoginResponse, User } from "../../models/user.model";
 import { ApiService } from "../../services/api.service";
@@ -9,7 +9,7 @@ import { AuthService } from "../../services/auth.service";
 @Component({
   selector: "app-dashboard",
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   template: `
     <div class="d-flex">
       <!-- Sidebar -->
@@ -54,6 +54,20 @@ import { AuthService } from "../../services/auth.service";
               >
                 <i class="fas fa-users me-2"></i>
                 Usuários
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/oracle-reports">
+                <i class="fas fa-database me-2"></i>
+                Relatórios Oracle
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/chatbot-db">
+                <i class="fas fa-robot me-2"></i>
+                ChatBot DB
               </a>
             </li>
           </ul>
